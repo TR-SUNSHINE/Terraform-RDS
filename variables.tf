@@ -7,11 +7,13 @@ variable "aws_region" {
 variable "rds_instance_identifer" {
     type        = string
     description = "The name of your database instance"
+    default     = "sunshine-db-instance"
 }
 
 variable "database_name" {
     type        = string
     description = "The name of a database to create on your database instance"
+    default     = "sunshineDB"
 }
 
 variable "database_username" {
